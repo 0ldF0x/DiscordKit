@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "DiscordKitCore",
             dependencies: [
-                .product(name: "Reachability", package: "Reachability.swift", condition: .when(platforms: [.macOS])),
+                .product(name: "Reachability", package: "Reachability.swift"),
                 .product(name: "SwiftProtobuf", package: "swift-protobuf"),
                 .target(name: "DiscordKitCommon"),
             ],
